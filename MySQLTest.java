@@ -69,28 +69,24 @@ public class MySQLTest {
         String password = "password";
         Connection myConn = DriverManager.getConnection(url, username, password);
         Statement myStmt = myConn.createStatement();
-                String[] dates = getPrices(p, 8);
-            System.out.println(dates.length * city.length - 6248035);
-//            int iti = 1;
-//            while (iti < city.length) {
-//                String[] parts = splitCSVLine(city[iti]);
-//                String[] prices = getPrices(parts, 8);
-//                String[] dates = getPrices(p, 8);
-//                FileRow row = new FileRow(parts[0], parts[1], parts[2], parts[3], parts[4], parts[5], parts[6], parts[7], prices, dates, iti);
-//                String[] statement = row.insertRow(myConn);
-//                try {
-//                    for (int i = 0; i < statement.length; i++) {
-//                        myStmt.addBatch(statement[i]);
-//                        myStmt.executeBatch();
-//                    }
-//                } catch (Exception e) {
-//                    e.printStackTrace();
-//                }
-////               myStmt.addBatch(statement);
-////               myStmt.executeBatch();
-//                iti++;
-//            }
-//        myConn.close();
+           int iti = 1;
+           while (iti < city.length) {
+               String[] parts = splitCSVLine(city[iti]);
+               String[] prices = getPrices(parts, 8);
+               String[] dates = getPrices(p, 8);
+               FileRow row = new FileRow(parts[0], parts[1], parts[2], parts[3], parts[4], parts[5], parts[6], parts[7], prices, dates, iti);
+               String[] statement = row.insertRow(myConn);
+               try {
+                   for (int i = 0; i < statement.length; i++) {
+                       myStmt.addBatch(statement[i]);
+                       myStmt.executeBatch();
+                   }
+               } catch (Exception e) {
+                   e.printStackTrace();
+               }
+               iti++;
+           }
+       myConn.close();
     }
 }
 

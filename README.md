@@ -1,6 +1,6 @@
 # HousePricesProject
 
-• Developed a dynamic website using Zillow time series housing data to analyze real estate trends by city.
+• Developed a website using Zillow time series housing data to analyze real estate trends by city.
 
 • Implemented a robust data pipeline in Java to efficiently process and store time series data into a MySQL database from a CSV file.
 

@@ -8,4 +8,4 @@
 
 • Leveraged a tech stack that includes React, Node.js, Java, MySQL, SQL, and HTML to ensure seamless data flow, user-friendly interface, and smooth data visualization.
 
-![Time series of House Prices in Champaign, IL from 2000-2023](Image URL)
+![Time series of House Prices in Champaign, IL from 2000-2023](https://github.com/snerkar17/HousePricesProject/main/Screenshot2023-08-27at6.37.26PM.png)

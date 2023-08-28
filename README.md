@@ -6,6 +6,6 @@
 
 • Created interactive APIs using Node.js and React, enabling users to select a state and city of interest, and generating visualized line graphs representing house prices from 2000 to 2023 using 'recharts'
 
-• Leveraged a tech stack that includes React, Node.js, Java, MySQL, SQL, and HTML to ensure seamless data flow, user-friendly interface, and smooth data visualization.
+• Leveraged a tech stack that includes React, Node.js, Java, MySQL, SQL, and Javascript to ensure seamless data flow, user-friendly interface, and smooth data visualization.
 
 ![Time series of House Prices in Champaign, IL from 2000-2023](https://github.com/snerkar17/HousePricesProject/main/picture.png)
